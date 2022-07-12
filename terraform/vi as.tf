@@ -39,7 +39,7 @@ resource "aws_launch_template" "bastion-launch-template" {
 }
 
 
-### bastion auroscaling group 생성
+### bastion autoscaling group 생성
 resource "aws_autoscaling_group" "bastion-asg" {
   launch_template {
     id      = aws_launch_template.bastion-launch-template.id             # 시작 템플릿 연결
