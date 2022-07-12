@@ -17,3 +17,4 @@ module "global-shop-project-vpc" {
 
   enable_nat_gateway = true # Nat gateway 활성화
   single_nat_gateway = true
+}
