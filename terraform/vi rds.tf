@@ -19,7 +19,7 @@ resource "aws_db_instance" "global-shop-project-db" {
   engine_version         = "8.0.28"                       # engine version 설정 (8.0.28)
   instance_class         = "db.t2.micro"                  # instance class 설정 (db.t2.micro), 이전 클래스 사용 시 db.t2.micro 사용 가능
   username               = "admin"                        # username 설정
-  password               = "password"                     # password 설정 (파일 처리 후 파일변수로 수정할 계획)
+  password               = "********"                     # password 설정 (파일 처리 후 파일변수로 수정할 계획)
   storage_type           = "gp2"                          # storage_type (gp2)
   db_subnet_group_name   = "rds-subnet-group"             # RDS subnet group 지정
   skip_final_snapshot    = true                           # 종료 시 snapshot 생성 하지 않음 설정 (false -> RDS 종료 시 snapshot 생성)
